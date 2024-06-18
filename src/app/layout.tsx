@@ -28,10 +28,10 @@ export default function RootLayout({
               Portfolio
             </Link>
             <Link className="hover:text-gray-400" href="bond">
-              Bond
+              채권
             </Link>
-            <Link className="hover:text-gray-400" href="#">
-              Compare
+            <Link className="hover:text-gray-400" href="pos">
+              공모주
             </Link>
             <Link className="hover:text-gray-400" href="#">
               Resources
