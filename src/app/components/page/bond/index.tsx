@@ -21,7 +21,7 @@ function BondComponent(props: Securities.BondData) {
     pricedDate,
   } = props;
   return (
-    <div>
+    <div className="pt-4">
       <h4 className="flex justify-end mb-5">{`업데이트일시 : ${"2024-06-25 오전 10:00:00"}`}</h4>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="grid gap-4">

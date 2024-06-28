@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="ko">
       <body className={inter.className}>
         <header className="bg-gray-900 text-white py-4 px-6 flex items-center justify-between">
-          <Link className="text-xl font-bold" href="/">
+          <Link className="text-xl font-bold" href="#">
             Capio
           </Link>
           <nav className="hidden md:flex items-center space-x-4">
