@@ -21,7 +21,8 @@ function BondComponent(props: Securities.BondData) {
     pricedDate,
   } = props;
   return (
-    <div className="w-full max-w-6xl mx-auto py-8 px-4 md:px-6">
+    <div>
+      <h4 className="flex justify-end mb-5">{`업데이트일시 : ${"2024-06-25 오전 10:00:00"}`}</h4>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="grid gap-4">
           <Card title={"채권 상세정보"}>
@@ -56,7 +57,7 @@ function BondComponent(props: Securities.BondData) {
             </CardGrid>
           </Card>
         </div>
-        <Card title={"채권 가격"}>
+        <Card title={"최근 1년 채권 가격 추이"}>
           <Chart />
         </Card>
       </div>

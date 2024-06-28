@@ -17,31 +17,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body className={inter.className}>
         <header className="bg-gray-900 text-white py-4 px-6 flex items-center justify-between">
-          <Link className="text-xl font-bold" href="#">
-            Invest Advisor
+          <Link className="text-xl font-bold" href="/">
+            Capio
           </Link>
           <nav className="hidden md:flex items-center space-x-4">
-            <Link className="hover:text-gray-400" href="#">
-              Portfolio
-            </Link>
             <Link className="hover:text-gray-400" href="bond">
               채권
             </Link>
             <Link className="hover:text-gray-400" href="pos">
-              공모주
-            </Link>
-            <Link className="hover:text-gray-400" href="#">
-              Resources
+              공모주 달력
             </Link>
           </nav>
           <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 md:hidden">
             Menu
           </button>
         </header>
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
